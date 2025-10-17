@@ -9,7 +9,7 @@ if git diff --name-only HEAD@{1} HEAD | grep -qE '(^|/)(package(-lock)?\.json)$'
   echo "👉  Run: npm ci"
   echo
 else
-  echo "✅  No dependency file changes detected." 
+  echo "✅  No dependency file changes detected"
   echo
 fi
 EOF
