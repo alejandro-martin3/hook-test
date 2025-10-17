@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/alejandro-martin3/hook-test/issues"
   },
-  "homepage": "https://github.com/alejandro-martin3/hook-test#readme"
+  "homepage": "https://github.com/alejandro-martin3/hook-test#readme",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
 }
