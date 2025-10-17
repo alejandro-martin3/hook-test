@@ -1,0 +1,15 @@
+cat > .githooks/post-merge << 'EOF'
+#!/usr/bin/env bash
+set -euo pipefail
+
+# Warn after a pull that merged new commits if dependency files changed
+if git diff --name-only HEAD@{1} HEAD | grep -qE '(^|/)(package(-lock)?\.json)$'; then
+  echo
+  echo "⚠️  Dependency files changed (package.json / package-lock.json)"
+  echo "👉  Run: npm ci"
+  echo
+else
+  echo "✅  No dependency file changes detected." 
+  echo
+fi
+EOF
