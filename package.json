@@ -19,6 +19,7 @@
   "homepage": "https://github.com/alejandro-martin3/hook-test#readme",
   "dependencies": {
     "dayjs": "^1.11.18",
-    "lodash": "^4.17.21"
+    "lodash": "^4.17.21",
+    "uuid": "^13.0.0"
   }
 }
